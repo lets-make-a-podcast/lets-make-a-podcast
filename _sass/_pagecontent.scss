@@ -22,3 +22,27 @@
         }
     }
 }
+
+
+.post-list{
+    padding: 0;
+
+    li{
+        list-style: none;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+
+        .post-content{
+            padding: 2em 20%;
+            top: 0;
+            left: 180px;
+
+            h2, span{
+                background: $color-white;
+                padding: 1em;
+            }
+        }
+    }
+}
