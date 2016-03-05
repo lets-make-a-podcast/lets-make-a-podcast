@@ -3,11 +3,13 @@
 ---
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "reset",
-        "fonts",
-        "variables",
-        "typography",
-        "layout"
+    "variables",
+    "reset",
+    "fonts",
+    "global",
+    "typography",
+    "header",
+    "pagecontent",
+    "footer"
 ;

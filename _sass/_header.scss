@@ -1,0 +1,39 @@
+.site-header{
+    padding: 2em 0;
+    position: relative;
+    background: $color-primary;
+
+    .site-title{
+        @extend h1;
+        font-family: 'cutive-mono';
+        color: $color-white;
+    }
+
+
+    .site-nav{
+        width: 50%;
+
+        .menu-icon{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 2.25em;
+            right: 10%;
+        }
+
+        .trigger{
+            position: fixed;
+            right: -100vw;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: $color-secondary;
+            color: $color-white;
+            transition: right .3s;
+
+            &.is-visible{
+                right: 0;
+            }
+        }
+    }
+}
