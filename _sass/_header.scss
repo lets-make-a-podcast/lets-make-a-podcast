@@ -5,7 +5,7 @@
 
     .site-title{
         @extend h1;
-        font-family: 'cutive-mono';
+        font-family: $mono;
         color: $color-white;
     }
 
