@@ -5,6 +5,7 @@
 
     .site-title{
         @extend h1;
+        font-family: 'cutive-mono';
         color: $color-white;
     }
 
@@ -65,6 +66,10 @@
 .site-footer{
     padding: 2em 10%;
     background: $color-primary;
+
+    .footer-heading{
+        font-family: 'cutive-mono';
+    }
 
     .social-media-list{
         a{
