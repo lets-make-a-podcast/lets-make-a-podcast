@@ -1,0 +1,56 @@
+h1{
+    font-family: 'cutive-mono';
+    font-size: 1.4em;
+    line-height: 1.2em;
+    margin: 1em 0;
+}
+
+h2{
+    font-family: 'cutive-mono';
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 1em 0;
+}
+
+h3{
+    font-family: 'cutive-mono';
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+h4{
+    font-family: 'droid-sans';
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+h5{
+    font-family: 'droid-sans-bold';
+    text-transform: uppercase;
+    font-size: .8em;
+    line-height: 1.2em;
+    margin: 1em 0;
+}
+
+li{
+    margin: .5em 0 .5em 1.5em;
+    list-style: disc;
+}
+
+blockquote{
+    font-family: 'cutive-mono';
+}
+
+p, dl, ul, ol, span{
+    font-family: 'droid-sans';
+    line-height: 1.2em;
+}
+
+p{
+    margin: 1em 0;
+}
+
+a{
+    text-decoration: none;
+    color: $color-secondary;
+}
