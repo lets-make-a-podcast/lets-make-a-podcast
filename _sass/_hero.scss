@@ -1,25 +1,38 @@
 .hero {
-    padding: 1.6em 0;
+    padding: 2em 0;
     background: $color-white;
     color: $color-black;
     font-weight: normal;
     border-bottom: 1px solid #eee;
 
     p {
-        font-size: 1.6em;
+        font-size: 1em;
         line-height: 1.6em;
-        margin-left: 60px;
+        margin: 0;
     }
 
     span {
         font-weight: bold;
         color: $color-primary;
     }
+}
 
-    i {
-        font-size: 4em;
-        float: left;
-        display: block;
-        margin-top: 6px;
+@media only screen and (min-width: 500px) {
+    .hero {
+        padding: 3.2em 0;
+        p {
+            font-size: 2.2em;
+            line-height: 1.2em;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .hero {
+        padding: 3.2em 0;
+        p {
+            font-size: 4.8em;
+            line-height: 1.2em;
+        }
     }
 }

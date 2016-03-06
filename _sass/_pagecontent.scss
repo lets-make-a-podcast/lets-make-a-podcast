@@ -28,11 +28,11 @@
     }
 }
 
-
 .post-list{
-    padding: 0;
-    @include flexbox();
-    @include justify-content(space-between);
+
+    .page-heading {
+        padding: 0;
+    }
 
     li{
         list-style: none;
@@ -42,9 +42,7 @@
         margin: 0;
         background: $color-white;
         border: 1px solid #eee;
-
-        @include flex(0 0 45%);
-        width: 45%;
+        margin: 3.2em 0;
 
         a .post-content{
             padding: 2em;

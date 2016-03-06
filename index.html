@@ -4,23 +4,27 @@ layout: home
 
 <div class="home">
 
-    <h1 class="page-heading">Recent Episodes</h1>
+    <div class="post-list">
 
-    <ul class="post-list">
-        {% for post in site.posts %}
-        <li>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                <div class="post-thumnail">
-                    <img src="{{ site.baseurl }}/img/{{ post.banner }}" alt="{{ post.title }}" />
-                </div>
-                <div class="post-content">
-                    <h2>{{ post.title }} <span class="post-meta">&mdash; {{ post.date | date: "%B %-d, %Y" }}</span></h2>
-                    <p>{{ post.description }}
-                </div><!--.post-content-->
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+        <h1 class="page-heading">Recent Episodes</h1>
+
+        <ul >
+            {% for post in site.posts %}
+            <li>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <div class="post-thumnail">
+                        <img src="{{ site.baseurl }}/img/{{ post.banner }}" alt="{{ post.title }}" />
+                    </div>
+                    <div class="post-content">
+                        <h2>{{ post.title }} <span class="post-meta">&mdash; {{ post.date | date: "%B %-d, %Y" }}</span></h2>
+                        <p>{{ post.description }}
+                    </div><!--.post-content-->
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
 
     <!-- p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 

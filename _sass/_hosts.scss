@@ -1,0 +1,68 @@
+.hosts {
+
+    border-top: 1px solid #eee;
+
+    .hosts-title h2{
+        text-align: center;
+        padding: .8em;
+    }
+
+    ul {
+        @include flexbox();
+        @include justify-content(space-between);
+    }
+
+    li {
+        width: 33%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+
+        @include flexbox();
+        @include flex(0 0 33%);
+
+        &:nth-child(2) {
+            width: 34%;
+            @include flex(0 0 34%);
+        }
+    }
+
+    a {
+        display: block;
+        @include flexbox();
+        @include flex(1 1 100%);
+        @include flex-direction(column);
+    }
+
+    a h3 {
+        padding: 30% 0;
+        text-align: center;
+        visibility: hidden;
+        transition: background .25s;
+        @include flex(1 1 100%);
+        @include flex-direction(column);
+        color: $color-white;
+    }
+
+    a:hover h3 {
+        visibility: visible;
+        background: transparentize($color-black, .3);
+    }
+
+    .rucker {
+        background: url('../img/bios/rucker.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .rigby {
+        background: url('../img/bios/rigby.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .mobley {
+        background: url('../img/bios/mobley.jpg') no-repeat;
+        background-size: cover;
+    }
+
+}

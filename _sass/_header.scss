@@ -7,7 +7,17 @@
     .site-title{
         @extend h1;
         font-weight: normal;
+        font-size: 1em;
         color: $color-black;
+
+        i {
+            font-size: 1.8em;
+            vertical-align: middle;
+            transform: rotate(30deg);
+            margin-right: .5em;
+            padding-bottom: .14em;
+            display: inline-block;
+        }
     }
 
     .site-nav{
