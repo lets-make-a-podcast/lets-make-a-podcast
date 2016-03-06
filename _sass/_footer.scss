@@ -3,22 +3,6 @@
     background: $color-primary;
 
     .footer-heading{
-        font-family: $mono;
-    }
-
-    .social-media-list{
-        a{
-            display: inline-block;
-
-            span{
-                display: inline-block;
-
-                &.icon{
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 1em;
-                }
-            }
-        }
+        @extend h1;
     }
 }

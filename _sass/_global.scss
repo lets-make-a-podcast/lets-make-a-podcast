@@ -1,5 +1,9 @@
 .wrapper {
-    max-width: 768px;
+    max-width: 900px;
     width: 90%;
     margin: 0 auto;
+}
+
+a:hover {
+    color: $color-primary;
 }

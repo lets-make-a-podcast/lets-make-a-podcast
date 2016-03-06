@@ -1,12 +1,13 @@
 .site-header{
-    padding: 2em 0;
+    padding: 1.6em 0;
     position: relative;
-    background: $color-primary;
+    background: $color-white;
+    border-bottom: 1px solid #eee;
 
     .site-title{
         @extend h1;
-        font-family: $mono;
-        color: $color-white;
+        font-weight: normal;
+        color: $color-black;
     }
 
     .site-nav{

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 <div class="home">
@@ -8,18 +8,20 @@ layout: default
 
     <ul class="post-list">
         {% for post in site.posts %}
-        <li style="background-image: url( {{ site.baseurl }}/img/{{ post.banner }});">
-            <div class="post-content">
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-                <h2>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-            </div><!--.post-content-->
+        <li>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                <div class="post-thumnail">
+                    <img src="{{ site.baseurl }}/img/{{ post.banner }}" alt="{{ post.title }}" />
+                </div>
+                <div class="post-content">
+                    <h2>{{ post.title }} <span class="post-meta">&mdash; {{ post.date | date: "%B %-d, %Y" }}</span></h2>
+                    <p>{{ post.description }}
+                </div><!--.post-content-->
+            </a>
         </li>
         {% endfor %}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
