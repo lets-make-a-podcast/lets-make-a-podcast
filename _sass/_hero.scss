@@ -1,7 +1,9 @@
 .hero {
     padding: 2em 0;
-    background: $color-white;
-    color: $color-black;
+    background: url('../img/herobg.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $color-white;
     font-weight: normal;
     border-bottom: 1px solid #eee;
 

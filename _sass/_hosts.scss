@@ -1,68 +1,58 @@
 .hosts {
 
+    padding: 2.4em 0;
     border-top: 1px solid #eee;
 
-    .hosts-title h2{
-        text-align: center;
-        padding: .8em;
-    }
+    .hosts-title {
+        margin: 3.2em 0;
 
-    ul {
-        @include flexbox();
-        @include justify-content(space-between);
-    }
-
-    li {
-        width: 33%;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: inline-block;
-
-        @include flexbox();
-        @include flex(0 0 33%);
-
-        &:nth-child(2) {
-            width: 34%;
-            @include flex(0 0 34%);
+        h2{
+            text-align: center;
+            font-size: 1.8em;
+            color: $color-primary;
         }
     }
 
-    a {
-        display: block;
+
+    li {
+        margin: 0 0 3.2em 0;
+        padding: 0;
+        list-style: none;
+
+        img {
+            width: 150px;
+            height: 150px;
+
+            border-radius: 50%;
+            display: block;
+            margin-right: 2em;
+            margin: 0 auto;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 2.2em 0 1.2em 0;
+        }
+
+        .bio p {
+            font-size: .8em;
+            line-height: 1.6em;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    .hosts ul {
+
         @include flexbox();
-        @include flex(1 1 100%);
-        @include flex-direction(column);
-    }
+        @include justify-content(space-between);
 
-    a h3 {
-        padding: 30% 0;
-        text-align: center;
-        visibility: hidden;
-        transition: background .25s;
-        @include flex(1 1 100%);
-        @include flex-direction(column);
-        color: $color-white;
+        li {
+            width: 30%;
+            @include flex(0 0 30%);
+        }
     }
-
-    a:hover h3 {
-        visibility: visible;
-        background: transparentize($color-black, .3);
-    }
-
-    .rucker {
-        background: url('../img/bios/rucker.jpg') no-repeat;
-        background-size: cover;
-    }
-
-    .rigby {
-        background: url('../img/bios/rigby.jpg') no-repeat;
-        background-size: cover;
-    }
-
-    .mobley {
-        background: url('../img/bios/mobley.jpg') no-repeat;
-        background-size: cover;
-    }
-
 }
