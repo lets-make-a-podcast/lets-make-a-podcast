@@ -17,6 +17,7 @@
             margin-right: .5em;
             padding-bottom: .14em;
             display: inline-block;
+            color: $color-primary;
         }
     }
 
@@ -46,4 +47,17 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 500px){
+
+    .site-header{
+
+        .site-title{
+            font-size: 1.4em;
+        }
+
+    }
+
+
 }
