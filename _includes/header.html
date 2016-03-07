@@ -24,6 +24,10 @@
         </nav>
             -->
 
+        {% if site.baseurl == '' %}
+            {% include ga-tracking.html %}
+        {% endif %}
+
     </div>
 
 </header>
