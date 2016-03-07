@@ -7,3 +7,7 @@
     </div>
 
 </footer>
+
+{% if site.baseurl == '' }
+    {% include ga-tracking.html %}
+{% endif %}
