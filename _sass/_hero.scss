@@ -17,6 +17,17 @@
         font-weight: bold;
         color: $color-primary;
     }
+
+    &.page {
+        background-size: cover;
+        background-attachment: initial;
+        background-position: center;
+        width: 100%;
+        position: static;
+        text-align: center;
+        padding: 0;
+        margin: 2em 0;
+    }
 }
 
 @media only screen and (min-width: 500px) {

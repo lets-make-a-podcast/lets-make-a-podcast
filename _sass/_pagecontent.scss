@@ -1,45 +1,88 @@
-.hero.page{
-    background-size: cover;
-    background-attachment: initial;
-    background-position: center;
-    height: 50px;
-    width: 100%;
-    position: static;
-}
-
 .page-content{
-    padding: 4em 0;
+    padding: 1.2em 0;
     background: #f9f9f9;
     @extend .clearfix;
 
-    .page-heading {
-        margin-top: 0;
-    }
-
-    img{
+    img {
         max-width: 100%;
     }
 
-    .description, .topics, .featured-track{
-        margin-top: 4em;
-    }
+    .post {
 
-    .featured-track{
+        .page-heading {
+            margin-top: 0;
+        }
 
-        dl{
-            background: $color-gray;
+        iframe {
             padding: 1em;
+        }
 
-            dt{
-                font-size: 1.2em;
-                margin-bottom: .25em;
-            }
+        h1 {
+            margin-bottom: .4em;
+            font-size: 1.6em;
+            line-height: 1.2em;
+        }
 
-            dd + dd{
-                margin-top: 2em;
-                font-size: .8em;
+        h2 {
+            margin: 2em 0;
+        }
+
+        p {
+            line-height: 1.4em;
+        }
+
+        p.post-meta {
+            margin-top: 0;
+            margin-bottom: 2em;
+            color: #999;
+            time {
+                font-weight: bold;
+                color: $color-black;
             }
         }
+
+        .featured-track{
+            margin: 2em 0;
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 1em;
+            @extend .clearfix;
+
+            img {
+                margin-bottom: 1em;
+            }
+
+            dl{
+                padding-top: .4em;
+
+                a:hover {
+                    color: $color-primary;
+                }
+
+                dt{
+                    font-size: 1.2em;
+                    margin-bottom: .25em;
+                    a {
+                        color: $color-black;
+                    }
+                }
+
+                dd {
+                    a {
+                        color: #999;
+                    }
+                }
+
+                dd + dd{
+                    margin-top: 2em;
+                    font-size: .8em;
+                    a {
+                        color: $color-secondary;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -96,15 +139,27 @@
 
     .page-content{
 
-        .featured-track{
+        padding: 1em 0;
 
-            img{
-                width: 25%;
-                float: left;
+        .post {
+
+            h1 {
+                font-size: 3.2em;
+                line-height: 1.2em;
             }
 
-            dl{
-                margin-left: 30%;
+            .featured-track{
+
+                img {
+                    width: 25%;
+                    float: left;
+                    margin-bottom: 0;
+                }
+
+                dl{
+                    margin-left: 30%;
+                }
+
             }
 
         }
