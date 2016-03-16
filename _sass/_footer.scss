@@ -1,3 +1,44 @@
+.follow-footer{
+    background: $color-secondary;
+    color: $color-white;
+    padding: 2em 0;
+
+    .twitter-link, .patreon-link{
+        color: $color-white;
+        text-align: center;
+        font-family: $sans;
+        font-size: 1.2em;
+        margin-top: .75em;
+        opacity: .8;
+        width: 49%;
+        display: inline-block;
+
+        span{
+            display: block;
+            opacity: .25;
+            margin-top: -2.2em;
+            height: 70px;
+            width: 70px;
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-indent: -9999em;
+            margin: -2.2em auto 0;
+        }
+    }
+
+    .twitter-link span{
+        background-image: url(../img/twitter-logo.png);
+
+    }
+
+    .patreon-link span{
+        background-image: url(../img/patreon-logo.png);
+
+    }
+
+}
+
 .site-footer {
     padding: 2em 0;
     background: $color-primary;
